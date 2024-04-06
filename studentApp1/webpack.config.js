@@ -44,7 +44,9 @@ module.exports = (_, argv) => ({
       name: "studentApp1",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './StudentForm': './src/StudentForm' 
+      },
       shared: {
         ...deps,
         react: {
